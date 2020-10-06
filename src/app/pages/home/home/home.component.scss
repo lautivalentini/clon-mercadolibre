@@ -1,0 +1,44 @@
+.inicio {
+    display: flex;
+    justify-content: center;
+  }
+  .inicioContainer {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    width: 1000px;
+  }
+  .card {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    background-color: #e5e5e5;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    height: auto;
+  }
+  #image {
+    width: 170px;
+    height: 100px;
+    margin-bottom: 10px;
+  
+  }
+  #destacado {
+    font-size: 40px;
+  }
+  #tituloCard {
+    font-size: 25px;
+    text-align: center;
+  }
+  #descriptionCard {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+  }

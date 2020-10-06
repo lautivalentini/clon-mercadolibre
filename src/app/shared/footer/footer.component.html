@@ -1,0 +1,21 @@
+<div class="footer">
+  <div class="footerContainer">
+    <div class="navigation">
+      <span id="title">Navegación</span>
+      <hr style="color: #000000; border: 1px solid #000000" />
+      <a href="/login" *ngIf="!isAuth()">Iniciar Sesión</a>
+      <a href="/register" *ngIf="!isAuth()">Registrarse</a>
+      <!-- if logged -->
+      <a href="/register" *ngIf="isAuth()">Home</a>
+      <a href="/register" *ngIf="isAuth()">Electrodomesticos</a>
+      <a href="/login" *ngIf="isAuth()">Computacion</a>
+    </div>
+    <div class="social">
+      <span id="titleRedes">Redes Sociales</span>
+      <hr style="color: #000000; border: 1px solid #000000" />
+      <a href="https://www.twitter.com/">Twitter</a>
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </div>
+</div>

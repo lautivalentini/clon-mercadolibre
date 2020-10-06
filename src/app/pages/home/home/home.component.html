@@ -1,0 +1,29 @@
+<!-- lista productos -->
+<div class="inicio">
+    <div class="inicioContainer">
+        <span id="destacado">HOME</span>
+        <hr style="border: 1px solid black; width: 1000px; margin-bottom: 70px;" />
+        <div class="container" *ngFor="let product of productList">
+            <div class="card">
+                <div class="elements">
+                    <img id="image" src="../../../../assets/destacado.png" alt="">
+                    <div class="data">
+                        <span id="tituloCard">{{ product.title }}</span>
+                        <span id="descriptionCard">{{ product.description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" *ngFor="let product of elementList">
+            <div class="card">
+                <div class="elements">
+                    <img id="image" src="../../../../assets/destacado.png" alt="">
+                    <div class="data">
+                        <span id="tituloCard">{{ product.title }}</span>
+                        <span id="descriptionCard">{{ product.description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

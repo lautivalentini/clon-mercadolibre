@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="login">
+    <div class="loginContainer">
+      <form (ngSubmit)="onSubmit()">
+        <div class="sesion">
+          <h1 id="login">Registrarse</h1>
+          <hr style="border: 1px solid black; width: 400px" />
+        </div>
+        <span id="user">Email</span>
+        <div class="user" [formGroup]="userGroup">
+          <input
+            id="userInput"
+            type="email"
+            placeholder="Ingresar Email"
+            formControlName="email"
+            required
+            autofocus
+          />
+        </div>
+        <p id="alertEmail" *ngIf="errorForm.email">
+          {{ errorForm.email }}
+        </p>
+        <span id="password">Contraseña</span>
+        <div class="password" [formGroup]="userGroup">
+          <input
+            id="passInput"
+            type="password"
+            placeholder="Ingresar Contraseña"
+            required
+            formControlName="password"
+          />
+        </div>
+        <p id="alertPassword" *ngIf="errorForm.password">
+          {{ errorForm.password }}
+        </p>
+        <div class="button">
+          <button id="buttonLogin" type="submit" [disabled]="!userGroup.valid">
+            Registrarse
+          </button>
+        </div>
+        <p>
+          Si ya tienes una cuenta, por favor
+          <a href="/login">Inicia Sesion</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

@@ -12,6 +12,13 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,
+        "strictInjectionParameters": true,
+        "enableIvy": false
+      }
     }
-]
+  ]
 }

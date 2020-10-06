@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.login {
+  background-color: #c4c4c4;
+  width: 600px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+.login:hover {
+  background-color: #e5e5e5;
+}
+.loginContainer {
+  margin-bottom: 15px;
+}
+#login {
+  text-align: center;
+  font-size: 40px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+#password {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+#passInput {
+  border: none;
+  padding: 10px;
+  width: 200px;
+}
+#userInput {
+  border: none;
+  padding: 10px;
+  width: 200px;
+}
+.button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#buttonLogin {
+  background-color: #ffe600;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  border-radius: 20px;
+}
+#buttonLogin:hover {
+  cursor: pointer;
+  background-color: #fff061;
+}
+p {
+  text-align: center;
+}
+#alert {
+  text-align: center;
+  display: block;
+  background-color: #ff9999;
+  padding: 10px;
+  border: 1px solid #c40000;
+  border-radius: 5px;
+  color: #a40000;
+}
