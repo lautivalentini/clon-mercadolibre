@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 # Link a Página
-![ScreenShot](https://raw.githubusercontent.com/lautivalentini/JavaScript-App/master/img.png)
+![ScreenShot](https://https://raw.githubusercontent.com/lautivalentini/marketapp/main/compras.PNG)
 
 ## Development server
 
