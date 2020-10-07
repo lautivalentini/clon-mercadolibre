@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Link a Página
 https://marketapp.vercel.app/
 
-![ScreenShot](https://https://https://raw.githubusercontent.com/lautivalentini/marketapp/main/screenshot.PNG)
+![ScreenShot](https://raw.githubusercontent.com/lautivalentini/marketapp/main/screenshot.PNG)
 
 ## Development server
 
