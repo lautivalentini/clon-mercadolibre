@@ -3,9 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 # Link a Página
-marketapp.vercel.app
+https://marketapp.vercel.app/
 
-![ScreenShot](https://https://raw.githubusercontent.com/lautivalentini/marketapp/main/compras.PNG)
+![ScreenShot](https://https://https://raw.githubusercontent.com/lautivalentini/marketapp/main/screenshot.PNG)
 
 ## Development server
 
