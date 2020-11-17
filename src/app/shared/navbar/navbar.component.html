@@ -1,4 +1,77 @@
 <div class="navbar">
+  <div class="navbar-logo">
+    <a href="/home"><img src="../../../assets/mercado-libre-logo.png" alt="Mercado Libre Logo"></a>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Estoy buscando ...">
+  </div>
+  <div class="menu" *ngIf='!showCross'>
+    <i class="fas fa-bars" (click)="showMenu = true; showCross = true" ></i>
+  </div>
+  <div class="menu" *ngIf='showCross' >
+    <i class="fas fa-times" (click)='showMenu = false; showCross = false;' ></i>
+  </div>
+  <div class="buy">
+    <i class="fas fa-shopping-cart" ></i>
+  </div>
+</div>
+
+<div class="second-navbar" *ngIf="isAuth()">
+  <div class="ubication">
+    <i class="fas fa-map-marker-alt"></i>
+  </div>
+  <div class="text-name-direction">
+    <p>Enviar a Lautaro Valentini - Córdoba ...</p>
+  </div>
+</div>
+
+<div class="drop-menu" *ngIf="showMenu">
+    <div class="profile" *ngIf="isAuth()" >
+      <img src="../../../assets/user-profile.png" alt="Foto Perfil">
+      <div class="username">
+        <p class="name">Hola Lautaro</p>
+        <p class="level">Nivel 4 - Mercado Puntos <i class="fas fa-angle-right"></i></p>
+      </div>
+    </div>
+    <button *ngIf="isAuth()" class="button-logout" type="submit" (click)="onLogout()" >Cerrar Sesión</button>
+    <div class="profile-logout" *ngIf="!isAuth()" >
+      <div class="profile-section">
+        <img src="../../../assets/user-profile.png" alt="Foto Perfil">
+        <div class="welcome">
+          <p>Bienvenido</p>
+          <small>Ingresa a tu cuenta para ver tus <br> compras, favoritos, etc</small>
+        </div>
+      </div>
+      <div class="buttons-sigin">
+        <button id="login" ><a href="/login">Ingresá</a></button>
+        <button id="register" ><a href="/register">Creá tu cuenta</a></button>          
+      </div>
+    </div>
+    <div class="section-menu">
+      <div><i class="fas fa-home"></i> <span>Inicio</span></div>
+      <div><i class="fas fa-bell"></i> <span>Notificaciones</span></div>
+      <div><i class="fas fa-shopping-bag"></i> <span>Mis Compras</span></div>
+      <div><i class="far fa-heart"></i> <span>Favoritos</span></div>
+      <div><i class="far fa-user-circle"></i> <span>Mi Cuenta</span></div>
+      <div><i class="far fa-clock"></i> <span>Historial</span></div>
+      <div><i class="fas fa-tag"></i> <span>Vender</span></div>
+    </div>
+    <div class="menu-items">
+      <div><i class="fas fa-align-left"></i> <span>Categorias</span></div>
+      <div><i class="fas fa-utensils"></i> <span>Supermercado</span></div>
+      <div><i class="fas fa-store-alt"></i> <span>Tiendas Oficiales</span></div>
+    </div>
+    <div class="help">
+      <i class="far fa-question-circle"></i> <span>Ayuda</span>
+    </div>
+    <div class="app">
+      <i class="fas fa-download"></i> <span>Compra y Vende con la App</span>
+    </div>
+</div>
+
+
+
+<!-- <div class="navbar">
   <div class="nav">
     <div class="market">
       <a id="title" href="/home">Marketplace</a>
@@ -21,4 +94,4 @@
   <a *ngIf="showItems" id="items" href="/home">Home</a>
   <a *ngIf="showItems" id="items" href="/electrodomesticos">Electrodomesticos</a>
   <a *ngIf="showItems" id="items" href="/computacion">Computacion</a>
-</div>
+</div> -->

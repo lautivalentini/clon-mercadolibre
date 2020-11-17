@@ -20,6 +20,8 @@ export class ComputingComponent implements OnInit {
 
   showForm: boolean = false;
 
+  showCross: boolean = false;
+
   elementList: Product[];
 
   constructor(private computerService: ComputerService,

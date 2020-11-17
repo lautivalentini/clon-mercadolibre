@@ -1,44 +1,153 @@
-.inicio {
-    display: flex;
+.slider-images {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  overflow-x: scroll;
+}
+
+.slider-images img {
+  width: 70%;
+  max-width: 500px;
+  scroll-snap-align: center;
+}
+
+.card-payment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-payment i {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: skyblue;
+}
+
+.text-card span {
+  display: block;
+  margin-left: 10px;
+  line-height: 1.6rem;
+}
+
+.promo {
+  font-size: 0.8rem;
+  color: skyblue;
+}
+
+.card-views-container {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-title p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0%;
+}
+
+.card-title hr {
+  width: 100%;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.card-image img {
+  width: 50%;
+  max-width: 200px;
+}
+
+.card-description p {
+  font-size: 0.8rem;
+  line-height: 0%;
+}
+
+.card-description small {
+  font-size: 0.6rem;
+  line-height: 0%;
+}
+
+#price {
+  font-size: 1.2rem;
+}
+
+#price small {
+  font-weight: 300;
+}
+
+#cuotas {
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+
+#envio {
+  font-size: 0.9rem;
+  line-height: 0.8rem;
+  font-weight: 500;
+}
+
+.tecnology {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-title-tecnology p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0%;
+}
+
+.card-title-tecnology hr {
+  width: 100%;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.card-image-tecnology img {
+  width: 50%;
+  max-width: 200px;
+}
+
+.card-description-tecnology p {
+  font-size: 0.8rem;
+}
+
+#price-tecnology {
+  font-size: 1rem;
+  line-height: 0%;
+}
+
+.card-tecnology-footer a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0%;
+  color: #2e98d1;
+  padding-top: 40px;
+  margin-top: 50px;
+  margin-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-tecnology-footer hr {
+  width: 100%;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-images {
+    overflow: hidden;
     justify-content: center;
   }
-  .inicioContainer {
-    margin-top: 40px;
-    margin-bottom: 70px;
-    width: 1000px;
-  }
-  .card {
-    width: 400px;
-    height: auto;
-    padding: 20px;
-    background-color: #e5e5e5;
-    margin-bottom: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 50px;
-    height: auto;
-  }
-  #image {
-    width: 170px;
-    height: 100px;
-    margin-bottom: 10px;
-  
-  }
-  #destacado {
-    font-size: 40px;
-  }
-  #tituloCard {
-    font-size: 25px;
-    text-align: center;
-  }
-  #descriptionCard {
-    display: block;
-    font-size: 15px;
-    text-align: center;
-  }
+}

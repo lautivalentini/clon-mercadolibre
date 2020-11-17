@@ -1,46 +1,12 @@
-<!-- lista de productos -->
-<div class="inicio">
-    <div class="inicioContainer">
-        <span id="destacado">COMPUTACION</span>
-        <hr style="border: 1px solid black; width: 1000px" />
         <!-- boton nuevos productos -->
-        <div class="newProduct">
+        <!-- <div class="newProduct">
             <div class="buttonProduct">
                 <button (click)="showForm = true" id="add">Crear/Editar un producto</button>
             </div>
-        </div>
+        </div> -->
         <!-- formulario crear productos -->
-        <div class="containerForms" *ngIf="showForm">
-            <form class="form" #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
-                <h1 id="product">Agregar/Editar un producto</h1>
 
-                <!-- actualizar producto -->
-                <div class="keyProduct">
-                    <input id="key" type="hidden" name="$key" [(ngModel)]="computerService.selectedElement.$key" />
-                </div>
-                <!-- agregar producto -->
-                <div class="titleProduct">
-                    <input id="title" type="text" name="title" [(ngModel)]="computerService.selectedElement.title"
-                        placeholder="Ingresar Nombre del Producto" />
-                </div>
-                <div class="descriptionProduct">
-                    <input id="description" type="text" name="description"
-                        [(ngModel)]="computerService.selectedElement.description"
-                        placeholder="Ingresar Descripcion del Producto" />
-                </div>
-                <div class="button">
-                    <button id="addProduct" type="submit">
-                        <i class="fas fa-plus-circle"></i>
-                        Agregar Producto
-                    </button>
-                    <button id="addProduct" type="reset" (click)="resetForm(productForm)">
-                        <i class="fas fa-sync-alt"></i>
-                        Resetear
-                    </button>
-                </div>
-            </form>
-        </div>
-        <div class="container" *ngFor="let product of elementList">
+        <!-- <div class="container" *ngFor="let product of elementList">
             <div class="card">
                 <div class="elements">
                     <img id="image" src="../../../../assets/computacion.png" alt="">
@@ -58,6 +24,65 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="product-container">
+    <div><p>Agregar nuevo producto</p></div>
+    <div *ngIf='!showCross' (click)="showForm = true; showCross = true;" ><i class="fas fa-angle-down"></i></div>
+    <div *ngIf='showCross' (click)="showForm = false; showCross = false;" ><i class="fas fa-times"></i></div>
+</div>
+
+<div class="containerForms" *ngIf="showForm">
+    <form class="form" #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+        
+        <div class="title-form">
+            <h1>Agregar un producto</h1>
+        </div>
+
+        <!-- actualizar producto -->
+        <div class="keyProduct">
+            <input id="key" type="hidden" name="$key" [(ngModel)]="computerService.selectedElement.$key" />
+        </div>
+        <!-- agregar producto -->
+        <div class="titleProduct">
+            <input id="title" type="text" name="title" [(ngModel)]="computerService.selectedElement.title"
+                placeholder="Ingresar Nombre del Producto" />
+        </div>
+        <div class="descriptionProduct">
+            <input id="description" type="text" name="description"
+                [(ngModel)]="computerService.selectedElement.description"
+                placeholder="Ingresar Descripcion del Producto" />
+        </div>
+        <div class="button">
+            <button id="addProduct" type="submit">
+                <i class="fas fa-plus-circle"></i>
+                Agregar Producto
+            </button>
+            <button id="addProduct" type="reset" (click)="resetForm(productForm)">
+                <i class="fas fa-sync-alt"></i>
+                Resetear
+            </button>
+        </div>
+    </form>
+</div>
+
+
+<div class="card-container">
+    <div class="card-products" *ngFor="let product of elementList">
+        <div class="card-image">
+            <img src="../../../../assets/mercado-libre/pc-mercado-libre.jpg" alt="">
+        </div>
+        <div class="card-title">
+            <p>{{ product.title }}</p>
+        </div>
+        <div class="card-description">
+            <p>{{ product.description }}</p>
+        </div>
+        <div class="buttons">
+                <div><span id="edit" (click)="onEdit(product); showForm = true; showCross = true;">Editar</span></div>
+                <div><span id="delete" (click)="onDelete(product.$key)" >Eliminar</span></div>
         </div>
     </div>
 </div>

@@ -14,6 +14,10 @@ export class NavbarComponent implements OnInit {
 
   showLine: boolean = false;
 
+  showMenu: boolean = false;
+
+  showCross: boolean = false;
+
   constructor(
     private authService: AuthenticationService,
     private router: Router,

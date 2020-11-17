@@ -1,47 +1,39 @@
-<div class="container">
-  <div class="login">
+    <div class="front-login"></div>
+    <div class="backgound"></div>
     <div class="loginContainer">
       <form (ngSubmit)="onSubmit()">
         <div class="sesion">
-          <h1 id="login">Inciar Sesion</h1>
-          <hr style="border: 1px solid black; width: 400px" />
+          <p id="login">¡Hola! Ingresa tu e-mail y contraseña</p>
         </div>
-        <span id="user">Email</span>
         <div class="user">
           <div [formGroup]="loginGroup">
             <input
-              id="userInput"
               type="email"
-              placeholder="Ingresar Email"
+              placeholder="Email"
               formControlName="email"
               required
               autofocus
             />
           </div>
         </div>
-        <span id="password">Contraseña</span>
         <div class="password">
           <div [formGroup]="loginGroup">
             <input
-              id="passInput"
               type="password"
-              placeholder="Ingresar Contraseña"
+              placeholder="Contraseña"
               formControlName="password"
               required
             />
           </div>
         </div>
         <div class="button">
-          <button id="buttonLogin" type="submit" [disabled]="!loginGroup.valid">
+          <button type="submit" [disabled]="!loginGroup.valid">
             Iniciar Sesion
           </button>
         </div>
-        <p id="alert" *ngIf="mensaje">El usuario o Contraseña no es correcto</p>
-        <p>
-          Si todavia no tienes una cuenta, primero debes
-          <a href="/register">Registrarte</a>
-        </p>
+        <div class="button-register">
+          <button><a href="/register">Crear cuenta</a></button>
+        </div>
+        <p id="alert" *ngIf='mensaje' >El usuario o contraseña no es correcto</p>
       </form>
     </div>
-  </div>
-</div>

@@ -18,6 +18,8 @@ import { ToastrService } from 'ngx-toastr';
 export class HomeAppliancesComponent implements OnInit {
   showForm: boolean = false;
 
+  showCross: boolean = false;
+
   productList: Product[];
 
   constructor(
