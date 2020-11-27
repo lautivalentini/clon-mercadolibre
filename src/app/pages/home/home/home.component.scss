@@ -24,7 +24,7 @@
 .card-payment i {
   font-size: 2rem;
   margin-right: 10px;
-  color: skyblue;
+  color:  #3484fa;
 }
 
 .text-card span {
@@ -35,22 +35,32 @@
 
 .promo {
   font-size: 0.8rem;
-  color: skyblue;
+  color:  #3484fa;
+}
+
+.views {
+  width: 90%;
+  margin: auto;
 }
 
 .card-views-container {
   background-color: white;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
+  max-width: 230px;
+  border-radius: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
 }
 
+.card-title {
+  width: 89%;
+  margin: auto;
+  margin-top: 40px;
+}
+
 .card-title p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 0%;
 }
 
@@ -62,6 +72,16 @@
 .card-image img {
   width: 50%;
   max-width: 200px;
+}
+
+.card-description button {
+  border: none;
+  background-color: #3484fa;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .card-description p {
@@ -94,55 +114,133 @@
 }
 
 .tecnology {
-  background-color: white;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.card-tecnology-container {
+  width: 250px;
+  height: 240px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.card-title-tecnology {
+  display: flex;
+  align-items: baseline;
+  width: 89%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.card-title-tecnology a {
+  text-decoration: none;
+  color: #3484fa;
+  font-size: 0.7rem;
+  margin-left: 5px;
 }
 
 .card-title-tecnology p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 0%;
 }
 
-.card-title-tecnology hr {
-  width: 100%;
-  border: 1px solid rgb(224, 224, 224);
+.card-image-tecnology img {
+  width: 100px;
 }
 
-.card-image-tecnology img {
-  width: 50%;
-  max-width: 200px;
+.card-description-tecnology button {
+  border: none;
+  background-color: #3484fa;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .card-description-tecnology p {
   font-size: 0.8rem;
+  font-weight: 300;
 }
 
 #price-tecnology {
-  font-size: 1rem;
-  line-height: 0%;
-}
-
-.card-tecnology-footer a {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 0%;
-  color: #2e98d1;
-  padding-top: 40px;
-  margin-top: 50px;
-  margin-right: 20px;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .card-tecnology-footer hr {
   width: 100%;
   border: 1px solid rgb(224, 224, 224);
+}
+
+.sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.sections a {
+  text-decoration: none;
+}
+
+.section-computacion {
+  background-color: white;
+  border: 1px solid #3484fa;
+  border-radius: 5px;
+  width: 130px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.section-electrodomesticos {
+  background-color: white;
+  border: 1px solid #3484fa;
+  border-radius: 5px;
+  width: 130px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.section-computacion i, .section-electrodomesticos i {
+  font-size: 2rem;
+  line-height: 60px;
+  color: #3484fa;
+}
+
+.section-computacion p, .section-electrodomesticos p {
+  color: #3484fa;
+  line-height: 0%;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .tecnology {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .card-tecnology-container {
+    margin: 5px 5px;
+  }
+  .views {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .card-views-container {
+    margin: 5px 5px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

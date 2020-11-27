@@ -27,29 +27,15 @@
   cursor: pointer;
 }
 
-.second-navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #fff159;
-}
-
-.ubication i {
-  font-size: 1.2rem;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.text-name-direction p {
-  font-weight: 300;
-}
-
 // drop menu
 
 .drop-menu {
   background-color: white;
   position: absolute;
   width: 100%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 5px silver;
   z-index: 2;
 }
 

@@ -16,15 +16,6 @@
   </div>
 </div>
 
-<div class="second-navbar" *ngIf="isAuth()">
-  <div class="ubication">
-    <i class="fas fa-map-marker-alt"></i>
-  </div>
-  <div class="text-name-direction">
-    <p>Enviar a Lautaro Valentini - Córdoba ...</p>
-  </div>
-</div>
-
 <div class="drop-menu" *ngIf="showMenu">
     <div class="profile" *ngIf="isAuth()" >
       <img src="../../../assets/user-profile.png" alt="Foto Perfil">
@@ -68,30 +59,3 @@
       <i class="fas fa-download"></i> <span>Compra y Vende con la App</span>
     </div>
 </div>
-
-
-
-<!-- <div class="navbar">
-  <div class="nav">
-    <div class="market">
-      <a id="title" href="/home">Marketplace</a>
-    </div>
-    <div class="noLogin">
-      <button id="login" routerLink="/login" *ngIf="!isAuth()">
-        Iniciar Sesión
-      </button>
-      <button id="login" (click)="onLogout()" *ngIf="isAuth()">
-        Cerrar Sesion
-      </button>
-      <button id="register" routerLink="/register">Registrarse</button>
-    </div>
-  </div>
-</div>
-<div class="productsContainer" (click)="showItems = true">
-  <div class="productsTitle">
-    <a id="products"><i class="fas fa-align-justify"></i>Productos</a>
-  </div>
-  <a *ngIf="showItems" id="items" href="/home">Home</a>
-  <a *ngIf="showItems" id="items" href="/electrodomesticos">Electrodomesticos</a>
-  <a *ngIf="showItems" id="items" href="/computacion">Computacion</a>
-</div> -->
