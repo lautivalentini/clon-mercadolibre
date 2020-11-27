@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Link a Página
 https://clon-mercadolibre.vercel.app/home
 
-![ScreenShot](https://raw.githubusercontent.com/lautivalentini/marketapp/main/screenshot.PNG)
+![ScreenShot](https://raw.githubusercontent.com/lautivalentini/clon-mercadolibre/main/screenshot.PNG)
 
 ## Development server
 
